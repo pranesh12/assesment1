@@ -1,6 +1,6 @@
 const Comment = require("../models/commentModel");
 
-exports.getComments = async (req, res) => {
+exports.getblogsComments = async (req, res) => {
   const comments = await Comment.find({});
   res.status(200).json(comments);
   try {

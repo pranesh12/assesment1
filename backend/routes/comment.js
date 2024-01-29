@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const {
-  getComments,
+  getblogsComments,
   getCommentById,
   createComment,
   updateComment,
@@ -9,7 +9,7 @@ const {
 } = require("../controllers/commentController");
 
 router
-  .get("/", getComments)
+  .get("/", getblogsComments)
   .post("/createcomment", createComment)
   .get("/:id", getCommentById)
   .put("/:id", updateComment)

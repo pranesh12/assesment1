@@ -26,6 +26,7 @@ exports.createBlog = async (req, res) => {
       title,
       body,
     });
+    console.log(title, body);
 
     res.status(201).json({ message: "blog created  Successfully" });
   } catch (err) {
